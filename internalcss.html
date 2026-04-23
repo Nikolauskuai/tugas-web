@@ -2,37 +2,111 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Internal CSS</title>
+    <title>Profil Mahasiswa</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-color: rgb(37, 3, 3);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at top, #5c7cfa 0%, #272747 60%, #14131e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #eef2ff;
+            padding: 24px;
+        }
+
+        .card {
+            max-width: 520px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 24px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(14px);
+            padding: 32px;
             text-align: center;
-            font-family: Arial, sans-serif;
         }
 
-        img {
-            width: 480px;
-            margin-top: 20px;
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 28px;
         }
 
-        h2 {
-            color: yellowgreen;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            color: #f8fafc;
         }
 
-        p {
-            color: blue;
+        .subtitle {
+            font-size: 1rem;
+            color: #d8dfea;
+            margin-bottom: 24px;
+        }
+
+        .details {
+            list-style: none;
+            text-align: left;
+            display: grid;
+            gap: 16px;
+            padding: 0 12px;
+        }
+
+        .details li {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 14px 18px;
+            color: #f1f5f9;
+        }
+
+        .details strong {
+            display: block;
+            color: #a5b4fc;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        .note {
+            margin-top: 24px;
+            font-size: 0.95rem;
+            color: #cbd5e1;
         }
     </style>
-
 </head>
 <body>
+    <section class="card">
+        <img class="avatar" src="images/profile.jpg" alt="Foto profil mahasiswa">
+        <h1>Niko Laus</h1>
+        <p class="subtitle">Mahasiswa Program Studi Teknik Komputer</p>
 
-    <img src="url" alt="desc">
+        <ul class="details">
+            <li>
+                <strong>Nama Mahasiswa</strong>
+                Niko laus kuai 
+            </li>
+            <li>
+                <strong>NIM</strong>
+                241110056
+            </li>
+            <li>
+                <strong>Program Studi</strong>
+                Teknik informatika
+            </li>
+        </ul>
 
-    <h2>Nama Mahasiswa</h2>
-    
-    <p>Program Studi</p>
-
+        <p class="note">Selamat datang di halaman profil sederhana yang dirancang dengan gaya bersih dan modern.</p>
+    </section>
 </body>
 </html>
