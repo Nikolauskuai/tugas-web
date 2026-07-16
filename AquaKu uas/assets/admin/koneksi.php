@@ -9,10 +9,10 @@
  */
 
 // Konfigurasi Database - UBAH SESUAI DENGAN HOSTING ANDA
-$host     = "localhost";
-$username = "root";
-$password = "";
-$database = "aquaku";
+$host     = "sql303.infinityfree.com";
+$username = "if0_42427817";
+$password = "12345";
+$database = "if0_42427817_database";
 
 // Koneksi MySQLi
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
