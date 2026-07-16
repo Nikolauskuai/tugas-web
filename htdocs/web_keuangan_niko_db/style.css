@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+header {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+header h1 {
+    color: #5a4ae3;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* === Profil dengan Foto === */
+.profile-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info {
+    flex: 1;
+    min-width: 250px;
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.info p {
+    margin: 8px 0;
+    color: #444;
+}
+
+.photo {
+    position: relative;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-glow {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(142, 68, 173, 0.3), transparent 70%);
+    filter: blur(15px);
+    z-index: 0;
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8e44ad;
+    box-shadow: 0 0 12px rgba(142, 68, 173, 0.5);
+    z-index: 1;
+    position: relative;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #5a4ae3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(90, 74, 227, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #5a4ae3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #4739b5;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #5a4ae3;
+    color: white;
+    font-weight: 500;
+}
+
+tr:hover {
+    background: #f8f9ff;
+}
+
+/* Styling untuk pesan error dan success */
+.error-message {
+    background: #fee;
+    color: #e44;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #fcc;
+}
+
+.success-message {
+    background: #efe;
+    color: #4a4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #cfc;
+}
+
+/* Styling untuk link */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5a4ae3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background: #4739b5;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background: #5a4ae3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4a3ad8;
+}
+
+.result {
+    background: #e8f4ff;
+    color: #1a5fb4;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-left: 4px solid #5a4ae3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #f0f2ff;
+    color: #5a4ae3;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: #f9faff;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #5a4ae3;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 1px solid #5a4ae3;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    background: #5a4ae3;
+    color: white;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .info {
+        width: 100%;
+    }
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
